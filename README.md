@@ -10,7 +10,7 @@ npm run dev
 Buka di browser:
 
 ```
-https://localhost:8080/
+http://localhost:8080/
 ```
 
 Hasil:
