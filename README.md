@@ -10,7 +10,8 @@ npm run dev
 Buka di browser:
 
 ```
-http://localhost:8080/
+http://localhost:8080/v1/tb
+http://localhost:8080/v1/toba
 ```
 
 Hasil:

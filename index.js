@@ -11,8 +11,21 @@ app.listen(port);
 
 app.get('/', async (req, res) => {
     let translatedVerse = await translateVerse(await randomVerse());
-    let verse = await alkitab(translatedVerse);
+    let verse = await alkitab('TB', translatedVerse);
 
     res.send(verse);
 });
 
+app.get('/v1/tb', async (req, res) => {
+    let translatedVerse = await translateVerse(await randomVerse());
+    let verse = await alkitab('TB', translatedVerse);
+
+    res.send(verse);
+});
+
+app.get('/v1/toba', async (req, res) => {
+    let translatedVerse = await translateVerse(await randomVerse());
+    let verse = await alkitab('TOBA', translatedVerse);
+
+    res.send(verse);
+});
